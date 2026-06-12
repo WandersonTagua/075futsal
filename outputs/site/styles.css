@@ -1744,60 +1744,35 @@ a {
 @media (max-width: 980px) {
   .home-view,
   .internal-view {
-    overflow-x: hidden;
+    overflow-x: auto;
   }
 
   .home-frame {
-    width: 100%;
-    max-width: 100vw;
+    width: 980px;
+    max-width: none;
   }
 
   .internal-header {
-    width: 100%;
-    height: auto;
+    width: 980px;
+    height: 51px;
   }
 
   .internal-header-inner {
-    width: min(100% - 24px, 920px);
-    height: auto;
-    min-height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px 18px;
-    padding: 10px 0;
-  }
-
-  .header-logo {
-    position: static;
-    width: 78px;
-    flex: 0 0 auto;
+    width: 980px;
+    height: 51px;
   }
 
   .site-nav {
-    position: static;
-    height: auto;
-    flex: 1 1 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0 20px;
-    order: 3;
+    gap: 22px;
   }
 
   .site-nav a {
-    height: 36px;
-    font-size: 0.86rem;
+    font-size: 0.9rem;
     white-space: nowrap;
   }
 
   .partner-button {
-    position: static;
-    width: auto;
-    min-height: 36px;
-    padding: 0 14px;
-    font-size: 0.86rem;
-    order: 2;
+    right: 4.1%;
   }
 
   .about-grid,
@@ -1828,38 +1803,6 @@ a {
 }
 
 @media (max-width: 560px) {
-  .home-art {
-    aspect-ratio: 1536 / 977;
-  }
-
-  .home-contact-strip {
-    min-height: 34px;
-  }
-
-  .internal-header-inner {
-    width: min(100% - 18px, 520px);
-    justify-content: space-between;
-  }
-
-  .header-logo {
-    width: 66px;
-  }
-
-  .partner-button {
-    min-height: 34px;
-    padding: 0 12px;
-    font-size: 0.78rem;
-  }
-
-  .site-nav {
-    gap: 0 14px;
-  }
-
-  .site-nav a {
-    height: 32px;
-    font-size: 0.8rem;
-  }
-
   .page-content {
     width: min(100% - 28px, 1160px);
     padding-top: 46px;
