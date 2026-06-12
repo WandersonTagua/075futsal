@@ -16,6 +16,54 @@ const pages = new Set([
 const pageViews = document.querySelectorAll(".page-view");
 const navLinks = document.querySelectorAll("[data-page-link]");
 
+const footerMarkup = `<footer class="site-footer" aria-label="Rodapé do 075 Futsal">
+  <div class="site-footer-inner">
+    <section class="footer-brand">
+      <img src="assets/logo-075.png" alt="Escudo 075 Futsal">
+      <p>O 075 Futsal representa Luís Eduardo Magalhães - BA com disciplina, união e paixão pelo esporte.</p>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="https://www.instagram.com/075futsal" aria-label="Instagram do 075 Futsal">IG</a>
+        <a href="#" aria-label="Facebook do 075 Futsal">FB</a>
+        <a href="#" aria-label="YouTube do 075 Futsal">YT</a>
+      </div>
+    </section>
+
+    <nav class="footer-column" aria-label="Links rápidos">
+      <h2>Links rápidos</h2>
+      <a href="#home">Home</a>
+      <a href="#equipe">Elenco</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#clube">História</a>
+    </nav>
+
+    <nav class="footer-column" aria-label="Institucional">
+      <h2>Institucional</h2>
+      <a href="#seja-parceiro">Patrocinadores</a>
+      <a href="#contato">Contato</a>
+      <a href="#patrocinios">Sua marca aqui</a>
+      <a href="#clube">O Clube</a>
+    </nav>
+
+    <section class="footer-column footer-contact">
+      <h2>Contato</h2>
+      <p>Luís Eduardo Magalhães - BA</p>
+      <a href="mailto:contato@075futsal.com.br">contato@075futsal.com.br</a>
+      <a href="https://wa.me/5575982921317">75 98292-1317</a>
+      <a href="https://wa.me/5577998442712">77 99844-2712</a>
+    </section>
+  </div>
+
+  <div class="site-footer-bottom">
+    <span>© 2026 075 Futsal. Todos os direitos reservados.</span>
+    <span>Juntos somos mais fortes. Dentro e fora das quadras.</span>
+  </div>
+</footer>`;
+
+pageViews.forEach((view) => {
+  view.insertAdjacentHTML("beforeend", footerMarkup);
+});
+
 function showPage(pageName) {
   const nextPage = pages.has(pageName) ? pageName : "home";
 
