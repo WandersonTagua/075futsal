@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: 075-futsal
+    runtime: static
+    buildCommand: echo "Site estatico pronto para publicar"
+    staticPublishPath: ./outputs/site
+    autoDeployTrigger: commit
