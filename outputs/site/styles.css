@@ -255,6 +255,7 @@ a {
   border-top: 1px solid var(--gold);
   border-bottom: 1px solid var(--gold);
   background: rgba(3, 3, 3, 0.96);
+  overflow: visible;
 }
 
 .internal-header-inner {
@@ -262,15 +263,16 @@ a {
   width: min(100%, 1536px);
   height: min(80px, 5.208333vw);
   margin: 0 auto;
+  overflow: visible;
 }
 
 .header-logo {
   position: absolute;
-  left: min(60px, 3.90625vw);
+  left: min(55px, 3.580729vw);
   top: 0;
   z-index: 3;
   display: block;
-  width: min(112px, 7.291667vw);
+  width: min(135px, 8.789063vw);
 }
 
 .header-logo img {

@@ -15,6 +15,11 @@ const pages = new Set([
 ]);
 const pageViews = document.querySelectorAll(".page-view");
 const navLinks = document.querySelectorAll("[data-page-link]");
+const headerLogoSrc = "assets/header-logo-075.png?v=1";
+
+document.querySelectorAll(".header-logo img").forEach((logo) => {
+  logo.src = headerLogoSrc;
+});
 
 const footerMarkup = `<footer class="site-footer" aria-label="Rodapé do 075 Futsal">
   <div class="site-footer-inner">
