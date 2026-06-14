@@ -138,32 +138,15 @@ const agendaEvents = [
     imageAlt: "Arte Dia de 075 na Chapada, 075 Futsal x Zendios",
   },
   {
-    title: "Treino preparatório",
-    category: "Preparação",
-    startDate: "2026-06-15",
-    opponent: "Adversário a confirmar",
-    status: "A confirmar",
-  },
-  {
-    title: "Amistoso regional",
-    category: "Amistoso",
-    startDate: "2026-06-22",
-    opponent: "Adversário a confirmar",
-    status: "A confirmar",
-  },
-  {
-    title: "Jogo-treino",
-    category: "Preparação",
-    startDate: "2026-06-29",
-    opponent: "Adversário a confirmar",
-    status: "A confirmar",
-  },
-  {
-    title: "Próximo desafio",
-    category: "Temporada",
-    startDate: "2026-07-06",
-    opponent: "Adversário a confirmar",
-    status: "A confirmar",
+    title: "Torneio Preparatório de Futsal",
+    category: "Competição preparatória",
+    startDate: "2026-07-11",
+    time: "13h00",
+    location: "Ginásio de Esportes - Itaberaba/BA",
+    opponent: "Galácticos FC, Itaberaba, AFA, Esquadrão e Projeto Mulecada",
+    status: "Confirmado",
+    image: "assets/agenda-torneio-preparatorio-itaberaba.jpg",
+    imageAlt: "Arte do Torneio Preparatório de Futsal em Itaberaba, com equipes confirmadas",
   },
 ];
 
@@ -243,9 +226,13 @@ function renderAgendaFeature(event, state) {
 
 function renderAgendaUpcomingItem(event) {
   const timeText = event.time ? ` - ${event.time}` : "";
+  const image = event.image
+    ? `<img class="upcoming-thumb" src="${event.image}" alt="${event.imageAlt || event.title}">`
+    : "";
 
-  return `<article class="upcoming-item">
+  return `<article class="upcoming-item${event.image ? " has-image" : ""}">
     <time datetime="${event.startDate}">${formatAgendaDate(event.startDate)}${timeText}</time>
+    ${image}
     <div>
       <h4>${event.title}</h4>
       <p>${event.opponent || event.category}</p>

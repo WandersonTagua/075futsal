@@ -954,6 +954,19 @@ a {
   background: rgba(255, 255, 255, 0.035);
 }
 
+.upcoming-item.has-image {
+  grid-template-columns: 135px 86px minmax(0, 1fr) 128px;
+}
+
+.upcoming-thumb {
+  width: 86px;
+  aspect-ratio: 455 / 578;
+  object-fit: cover;
+  border: 1px solid rgba(214, 154, 0, 0.48);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
+}
+
 .upcoming-item time {
   color: var(--gold);
   font-weight: 900;
