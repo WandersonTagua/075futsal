@@ -395,6 +395,33 @@ a {
   grid-template-columns: minmax(0, 1fr) 360px;
 }
 
+.club-history-hero {
+  position: relative;
+  margin: 0 0 24px;
+  overflow: hidden;
+  border: 1px solid rgba(214, 154, 0, 0.48);
+  border-radius: 14px;
+  background: #050505;
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.38);
+}
+
+.club-history-hero::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.28)),
+    linear-gradient(90deg, rgba(214, 154, 0, 0.16), transparent 28%, transparent 72%, rgba(0, 0, 0, 0.24));
+  pointer-events: none;
+  content: "";
+}
+
+.club-history-hero img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1536 / 946;
+  object-fit: cover;
+}
+
 .contact-grid {
   grid-template-columns: minmax(0, 0.86fr) minmax(360px, 0.7fr);
   align-items: stretch;
