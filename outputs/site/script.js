@@ -138,6 +138,17 @@ const agendaEvents = [
     imageAlt: "Arte Dia de 075 na Chapada, 075 Futsal x Zendios",
   },
   {
+    title: "Oliveirense x 075 Futsal",
+    category: "Desafio Intermunicipal de Futsal",
+    startDate: "2026-06-26",
+    time: "19h30",
+    location: "Ginásio Ottomar Schwengber",
+    opponent: "Oliveirense FC",
+    status: "Confirmado",
+    image: "assets/agenda-oliveirense-075-2026-06-26.jpg",
+    imageAlt: "Arte do desafio intermunicipal de futsal entre Oliveirense e 075 Futsal",
+  },
+  {
     title: "Torneio Preparatório de Futsal",
     category: "Competição preparatória",
     startDate: "2026-07-11",
